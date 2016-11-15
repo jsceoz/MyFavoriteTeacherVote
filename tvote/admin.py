@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Teacher, Vote
+from .models import Teacher, Vote, Student
 
 
 class TeacherAdmin(admin.ModelAdmin):
@@ -29,3 +29,4 @@ class VoteAdmin(admin.ModelAdmin):
 
 admin.site.register(Teacher, TeacherAdmin)
 admin.site.register(Vote, VoteAdmin)
+admin.site.register(Student)
