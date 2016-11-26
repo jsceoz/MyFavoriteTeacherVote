@@ -28,5 +28,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'verify/', views.get_token),
     url(r'vote/', views.vote),
-    url(r'cs/', views.cs)
+    url(r'cs/', views.cs),
+    url(r'py/', views.py)
 ]

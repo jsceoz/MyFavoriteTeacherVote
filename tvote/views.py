@@ -140,6 +140,12 @@ def cs(request):
     return HttpResponse('success')
 
 
+def py(request):
+    py = Vote(teacher_id=10, user_id=1)
+    py.save()
+    return HttpResponse(Teacher.objects.get(pk=10).vote)
+
+
 
 
 
